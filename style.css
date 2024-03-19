@@ -11,6 +11,18 @@
         // linear-gradient(to bottom, black 33.33%, white 33.33% 66.66%, green 66.66% 100%);
     // Can I get a circle with multiple colours?
     //background-image: linear-gradient(to right, orange 50%, yellow 50%);
+    background-image:
+	/* First, coarsest layer of feelings wheel */
+        conic-gradient(
+            red 0% 60deg,
+	    orange 60deg 120deg,
+	    yellow 120deg 180deg,
+	    green 180deg 240deg,
+	    blue 240deg 300deg,
+	    indigo 300deg 360deg
+	);
     position: relative; /* Needed for positioning, why? */
     margin: 0 auto; /* Have zero margin top/bottom, give automatic margin left/right? */
+    /* Rotate wheel so color changes align with X axis */
+    rotate: -90deg
 }
