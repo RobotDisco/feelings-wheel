@@ -1,0 +1,16 @@
+#feelingswheel {
+    height: 75vw; /* Will setting to viewport width keep my thing still a circle? */
+    width: 75vw; /* 50% of the viewport width, how to size based on browser window size? */
+    border-radius: 50%; /* This somehow makes the div circular ... if width/height are diameter, math checks out? */
+    //background-color: #000000; /* All black circle */
+    // Combine rectangular and conic gradients into a state flag as proof of concept
+    //background-image:
+        // The triangle part, made transparent to let the next layer show through
+        // conic-gradient(transparent 0% 240deg, red 240deg 300deg, transparent 300deg 360deg),
+	// The rectangular parts
+        // linear-gradient(to bottom, black 33.33%, white 33.33% 66.66%, green 66.66% 100%);
+    // Can I get a circle with multiple colours?
+    //background-image: linear-gradient(to right, orange 50%, yellow 50%);
+    position: relative; /* Needed for positioning, why? */
+    margin: 0 auto; /* Have zero margin top/bottom, give automatic margin left/right? */
+}
