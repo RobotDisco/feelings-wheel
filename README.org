@@ -7,16 +7,10 @@ An exercise for the author to understand and practice CSS, and emotions.
 
 ** Usage
 *** TODO describe how to use this program, including with commandline examples.
-```python
-import foobar
-
 
 * Contributing
-
 The priority of this project is for me to learn some basic frontend-dev.
 
 If you have any suggestions, please make an issue with the request or by all means fork this trivial codebase and add whatever brings you delight and joy.
-
 * License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+[[https://choosealicense.com/licenses/mit/][MIT]]
