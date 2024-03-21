@@ -23,6 +23,46 @@
 	);
     position: relative; /* Needed for positioning, why? */
     margin: 0 auto; /* Have zero margin top/bottom, give automatic margin left/right? */
+    display: flex;
+    justify-content: center; /* Make child divs vertically centred */
+    align-items: center; /* Make child divs horizontally centred */
     /* Rotate wheel so color changes align with X axis */
-    rotate: -90deg
+    rotate: -90deg;
+}
+
+#feelingswheel::before {
+    border: 2px solid black;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: calc(75vw * 0.67);
+    height: calc(75vw * 0.67);
+    background-image:
+	conic-gradient(
+            red 0% 60deg,
+	    orange 60deg 120deg,
+	    yellow 120deg 180deg,
+	    green 180deg 240deg,
+	    blue 240deg 300deg,
+	    indigo 300deg 360deg
+	);
+}
+
+#feelingswheel::after {
+    border: 2px solid black;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: calc(75vw * 0.33);
+    height: calc(75vw * 0.33);
+    background-image:
+	/* First, coarsest layer of feelings wheel */
+        conic-gradient(
+            red 0% 60deg,
+	    orange 60deg 120deg,
+	    yellow 120deg 180deg,
+	    green 180deg 240deg,
+	    blue 240deg 300deg,
+	    indigo 300deg 360deg
+	);
 }
